@@ -12,7 +12,7 @@ import {readFileSync} from 'fs'
 import {parse} from 'jsonc-parser'
 import remarkDirective from "remark-directive";
 import {RDNotePlugin, RDBilibiliPlugin} from "./src/plugins/remark-directive.mjs";
-import {PandaConfig} from "./src/config.js";
+import {PandaConfig} from "./src/config";
 
 const nightOwlDark = new ExpressiveCodeTheme(
     parse(readFileSync('./src/styles/expressive-code/night-owl-dark.jsonc', 'utf-8'))
