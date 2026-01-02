@@ -6,7 +6,7 @@ export const PandaConfig = {
   title: "Tu Nombre Blog",
   description: "Ingeniería, vida y código.",
   start: "2024",
-  site: "https://tu-blog-futuro.com", // Pon tu URL o localhost temporalmente
+  site: "https://javiarias.es", // Pon tu URL o localhost temporalmente
   defaultLocale: "es", // IMPORTANTE: Esto arregla el error del 'defaultLocale' undefined
   navbar: [
     { title: "Posts", url: "/" }, // En Panda, el home suele ser la lista de posts

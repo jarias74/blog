@@ -29,3 +29,4 @@ astro_tmp_pages_*
 
 # vercel
 .vercel
+.env*.local
