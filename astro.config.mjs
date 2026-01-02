@@ -37,10 +37,11 @@ export default defineConfig({
   site,
   scopedStyleStrategy: 'class',
   trailingSlash: 'always',
-
+//
   build: {
       format: 'directory'
   },
+  //
 
   markdown: {
       syntaxHighlight: false,
