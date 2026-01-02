@@ -15,6 +15,7 @@
         "@astrojs/rss": "latest",
         "@astrojs/sitemap": "latest",
         "@astrojs/ts-plugin": "latest",
+        "@astrojs/vercel": "^9.0.2",
         "astro": "latest",
         "astro-expressive-code": "latest",
         "astro-i18n-aut": "latest",
