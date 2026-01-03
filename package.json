@@ -12,10 +12,13 @@
     "dependencies": {
         "@astrojs/mdx": "latest",
         "@astrojs/partytown": "latest",
+        "@astrojs/react": "^4.4.2",
         "@astrojs/rss": "latest",
         "@astrojs/sitemap": "latest",
         "@astrojs/ts-plugin": "latest",
         "@astrojs/vercel": "^9.0.2",
+        "@keystatic/astro": "^5.0.6",
+        "@keystatic/core": "^0.5.48",
         "astro": "latest",
         "astro-expressive-code": "latest",
         "astro-i18n-aut": "latest",
@@ -24,6 +27,8 @@
         "luxon": "latest",
         "markdown-it": "latest",
         "purgecss": "latest",
+        "react": "^19.2.3",
+        "react-dom": "^19.2.3",
         "remark-pangu": "latest"
     },
     "devDependencies": {

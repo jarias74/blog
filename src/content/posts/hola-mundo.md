@@ -2,7 +2,7 @@
 title: "Mi primer post desde el M4"
 author: "Tu Nombre"
 description: "Probando el flujo de trabajo con Astro y Ghostty."
-pubDatetime: 2024-01-02
+pubDate: 2024-01-02
 tags: ["setup", "dev"]
 draft: false
 ---

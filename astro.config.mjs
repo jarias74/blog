@@ -16,15 +16,16 @@ import {PandaConfig} from "./src/config";
 
 import vercel from '@astrojs/vercel';
 
+// [NUEVO] Importaciones requeridas para Keystatic
+import react from '@astrojs/react';
+import keystatic from '@keystatic/astro';
+
 const nightOwlDark = new ExpressiveCodeTheme(
     parse(readFileSync('./src/styles/expressive-code/night-owl-dark.jsonc', 'utf-8'))
 )
 const nightOwlLight = new ExpressiveCodeTheme(
     parse(readFileSync('./src/styles/expressive-code/night-owl-light.jsonc', 'utf-8'))
 )
-
-
-
 
 const {site, defaultLocale} = PandaConfig
 // https://astro.build/config
@@ -36,12 +37,11 @@ export default defineConfig({
   prefetch: true,
   site,
   scopedStyleStrategy: 'class',
-  trailingSlash: 'always',
-//
+  trailingSlash: 'ignore',
+
   build: {
       format: 'directory'
   },
-  //
 
   markdown: {
       syntaxHighlight: false,
@@ -52,6 +52,10 @@ export default defineConfig({
   },
 
   integrations: [
+      // [NUEVO] React y Keystatic (React debe ir antes para renderizar la UI de Admin)
+      react(),
+      keystatic(),
+
       UnoCSS(),
       sitemap(),
       expressiveCode({
